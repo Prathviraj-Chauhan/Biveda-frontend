@@ -1,0 +1,90 @@
+.reply_wrapper {
+  width: 100%;
+  padding: 30px 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background: #1a1a1a;
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+  .contactus_input_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    .contactus_input_item {
+      width: 100%;
+      position: relative;
+      label {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 31px;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        padding: 10px 0;
+        @media (max-width: 1023px) {
+          font-size: 12px;
+        }
+      }
+      .contactus_input {
+        textarea {
+          width: 100%;
+          background: #1a1a1a;
+          border-radius: 8px;
+          border: 1px solid #1c2d2c;
+          color: #fff;
+          padding: 15px 20px;
+          outline: none;
+          font-size: 16px;
+          &::placeholder {
+            color: #808385;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+          }
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .reply_btns {
+    .sendmessage_btn {
+      border-radius: 6px;
+      padding: 10px 30px;
+      background: #0ceaef;
+      text-align: center;
+      border: none;
+      box-shadow: 0px 0px 59px 0px rgba(29, 145, 148, 0.25);
+      color: #000;
+      font-size: 18px;
+      font-family: Montserrat;
+      font-style: italic;
+      font-weight: 800;
+      line-height: 30px;
+      text-transform: uppercase;
+
+      @media (max-width: 1023px) {
+        font-size: 14px;
+      }
+    }
+    .cancel_btn {
+      padding: 10px 30px;
+      border-radius: 8px;
+      border: 2px solid #0ceaef;
+      color: #0ceaef;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: capitalize;
+      background: transparent;
+      margin-left: 20px;
+    }
+  }
+}

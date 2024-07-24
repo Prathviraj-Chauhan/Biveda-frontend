@@ -1,0 +1,43 @@
+.empty_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+
+  h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+  p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0px 0 30px 0;
+  }
+  a {
+    background: #0ceaef;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+  }
+}
+
+.lightevents__wrapper {
+  h1 {
+    color: #000000;
+  }
+  p {
+    color: #000000;
+  }
+  a {
+    background: #1da1f2;
+    color: #ffffff;
+  }
+}

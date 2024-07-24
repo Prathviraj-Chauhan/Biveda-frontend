@@ -1,0 +1,219 @@
+.order_row {
+  border-radius: 8px;
+  background: #000;
+  padding: 20px;
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  @media (max-width: 481px) {
+    padding: 10px;
+  }
+  .order_detail_div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .totalCost {
+      font-weight: 600;
+      span {
+        color: #fff;
+        font-weight: 300;
+        line-height: normal;
+        opacity: 0.7;
+        text-transform: capitalize;
+      }
+    }
+    .details_btn {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      @media (max-width: 481px) {
+        margin-top: 20px;
+      }
+      .view_btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background: #0ceaef;
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 700;
+        border: none;
+        @media (max-width: 767px) {
+          font-size: 16px;
+          padding: 10px 10px;
+        }
+      }
+      .cancel_btn {
+        padding: 9px 20px;
+        border-radius: 8px;
+        border: 1px solid #0ceaef;
+        background: transparent;
+        color: #0ceaef;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 700;
+        @media (max-width: 767px) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .order_detail_div2 {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      align-items: baseline;
+      flex-direction: column;
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0 0 8px 0;
+      @media (max-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      span {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: normal;
+        opacity: 0.7;
+        text-transform: capitalize;
+      }
+      .span_payment {
+        color: #259d12;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: capitalize;
+        opacity: 0.7;
+      }
+    }
+  }
+  .mainHr {
+    background: #fff;
+    margin: 20px 0 0px 0;
+    height: 2px;
+  }
+  .details_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px 20px 12px;
+    margin: 20px 0;
+    border-bottom: 1px solid #bebebe56;
+    @media (max-width: 481px) {
+      flex-direction: column;
+      align-items: unset;
+      padding: 20px 0;
+    }
+    input {
+      height: 20px;
+      width: 20px;
+    }
+    .img_of_active_div {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      .img_divs_main {
+        width: 96px;
+        height: 96px;
+        border-radius: 8px;
+        background: rgba(12, 234, 239, 0.31);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 96px;
+          height: 96px;
+        }
+      }
+
+      .product_title {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        @media (max-width: 767px) {
+          font-size: 17px;
+        }
+        @media (max-width: 481px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        @media (max-width: 481px) {
+          font-size: 14px;
+        }
+        span {
+          font-weight: 400;
+          opacity: 0.7;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.lightevents__wrapper {
+  background: #fff;
+  .order_detail_div1 {
+    h4 {
+      color: #000;
+    }
+    .details_btn {
+      .view_btn {
+        color: white;
+        background: #1da1f2;
+      }
+      .cancel_btn {
+        color: #1da1f2;
+        border: 1px solid #1da1f2;
+      }
+    }
+  }
+  .order_detail_div2 {
+    p {
+      color: #000;
+      span {
+        color: #000;
+      }
+    }
+  }
+  .mainHr {
+    background: #000;
+  }
+  .details_data {
+    .img_of_active_div {
+      .product_title {
+        color: #000;
+      }
+      p {
+        color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,276 @@
+.contactus_wrapper {
+  padding: 70px 0px 50px 0px;
+  // background: url("../../assets/images/contactback.png");
+  background-color: #121212;
+  color: white;
+
+  .contactus_list {
+    margin-bottom: 50px;
+    width: 30%;
+
+    @media (max-width: 1023px) {
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 0px;
+      display: unset;
+      width: 100%;
+    }
+    .contactus_item {
+      border-radius: 10px;
+      background: black;
+      width: 100%;
+      height: 132px;
+      display: flex;
+      padding: 0 30px;
+      align-items: center;
+      margin-bottom: 40px;
+
+      @media (max-width: 1023px) {
+        width: 31%;
+        margin-bottom: 0;
+        padding: 0 10px;
+        height: 100px;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 132px;
+      }
+      .contactus_img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+
+        @media (max-width: 1023px) {
+          display: none;
+        }
+        @media (max-width: 767px) {
+          display: flex;
+        }
+      }
+      .contactus_info {
+        margin-left: 20px;
+        a {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 21px;
+        }
+        @media (max-width: 1023px) {
+          margin-left: 10px;
+        }
+        h6 {
+          color: #fff;
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 3px;
+        }
+        a {
+          margin-bottom: 0;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: capitalize;
+          text-decoration: none;
+          word-break: break-all;
+          @media (max-width: 991px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .contactus_heading {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 67px;
+    text-transform: capitalize;
+    text-align: center;
+    span {
+      color: #0ceaef;
+      font-weight: 700;
+    }
+  }
+  .contactus_para {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    width: 792px;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    @media (max-width: 1023px) {
+      width: 100%;
+    }
+  }
+  .contactus_form {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    @media (max-width: 1023px) {
+      flex-direction: column;
+    }
+
+    form {
+      width: 70%;
+      padding: 30px 30px;
+      border-radius: 10px;
+      background: #000;
+      @media (max-width: 1023px) {
+        width: 100%;
+      }
+      .contactus_input_list {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        @media (max-width: 481px) {
+          flex-direction: column;
+          margin-bottom: 0px;
+        }
+        .contactus_input_item {
+          width: 48%;
+          @media (max-width: 481px) {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          label {
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            margin-bottom: 10px;
+          }
+          .contactus_input {
+            input {
+              width: 100%;
+              background-color: #121212;
+              border-radius: 6px;
+              border: 1px solid #3a3a3a;
+              color: #fff;
+              padding: 10px 20px;
+              outline: none;
+              &::placeholder {
+                color: #808385;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+              }
+            }
+            textarea {
+              width: 100%;
+              border-radius: 6px;
+              border: 1px solid #3a3a3a;
+              color: #fff;
+              background: #121212;
+              outline: none;
+              padding: 10px 20px;
+            }
+          }
+        }
+        .textarea_item {
+          width: 100% !important;
+        }
+      }
+      .sendmessage_btn {
+        border-radius: 6px;
+        padding: 10px 30px;
+        background: #0ceaef;
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+      }
+    }
+    .form_img {
+      width: 38%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.light_contactus {
+  background-color: #f9f9f9;
+  .contactus_list {
+    .contactus_item {
+      background: #fff;
+      .contactus_img {
+        background-color: #1da1f2;
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+      .contactus_info {
+        p {
+          color: #000;
+        }
+        h6 {
+          color: #000;
+        }
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .contactus_heading {
+    color: #000;
+    span {
+      color: #1da1f2;
+    }
+  }
+  .contactus_para {
+    color: #000;
+  }
+  .contactus_form {
+    form {
+      background: #fff;
+      .contactus_input_list {
+        .contactus_input_item {
+          label {
+            color: #000;
+          }
+          .contactus_input {
+            input {
+              background-color: #fff;
+              border: 1px solid #c3c3c3;
+              color: #000;
+            }
+            textarea {
+              border: 1px solid #c3c3c3;
+              color: #000;
+              background: #fff;
+            }
+          }
+        }
+        .textarea_item {
+          width: 100% !important;
+        }
+      }
+      .sendmessage_btn {
+        background: #1da1f2;
+        color: #fff;
+      }
+    }
+  }
+}

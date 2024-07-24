@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --background-color: #0ceaef;
+  --fill-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--primary-font);
+}
+.slick-arrow {
+  display: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  background-color: var(--background-color) !important;
+}
+
+.scroll_top_icon {
+  background-color: var(--background-color) !important;
+}
+
+.scroll_top_icon svg {
+  fill: var(--fill-color) !important;
+}
+/* .slick-track {
+  margin: unset !important;
+} */
+
+.validation_error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

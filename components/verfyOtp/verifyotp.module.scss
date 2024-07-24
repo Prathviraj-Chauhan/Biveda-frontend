@@ -1,0 +1,116 @@
+.verify_wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  background: #121212;
+
+  .main_div {
+    width: 35%;
+    background: #1a1a1a;
+    padding: 30px 30px;
+    @media (max-width: 1023px) {
+      width: 70%;
+    }
+    @media (max-width: 481px) {
+      width: 90%;
+    }
+    h4 {
+      text-align: center;
+      margin: 30px 0px 50px 0px;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      text-transform: capitalize;
+    }
+
+    .long_input_divs {
+      margin-bottom: 20px;
+      justify-content: center;
+      display: flex;
+
+      input {
+        color: #fff;
+        font-size: 1.4rem;
+        outline: none !important;
+        width: 60px !important;
+        margin: 0px 10px;
+        padding: 3px 10px;
+        text-align: center;
+        border-bottom: 2px solid #d8d8d8;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background-color: transparent;
+        @media (max-width: 576px) {
+          width: 55px !important;
+        }
+        @media (max-width: 375px) {
+          width: 40px !important;
+        }
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+    h5 {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: capitalize;
+      text-align: center;
+      margin: 40px 0;
+      span {
+        cursor: pointer;
+        color: #0ceaef;
+      }
+    }
+  }
+
+  .btn_of_otps {
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: #0ceaef;
+    box-shadow: 0px 0px 59px 0px rgba(29, 145, 148, 0.25);
+    border: none;
+  }
+}
+
+.light_verify_wrapper {
+  background: #f9f9f9;
+  .main_div {
+    background: #fff;
+    h4 {
+      color: #000;
+    }
+    .long_input_divs {
+      input {
+        color: #000;
+      }
+    }
+    h5 {
+      color: #000;
+      span {
+        color: #1da1f2;
+      }
+    }
+  }
+  .btn_of_otps {
+    color: #fff;
+    background: #1da1f2;
+  }
+}

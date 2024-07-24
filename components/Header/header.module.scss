@@ -1,0 +1,214 @@
+.header_wrapper {
+  width: 100%;
+  background: #000;
+  box-shadow: 0px 4px 98px 0px rgba(32, 126, 129, 0.38);
+  .header_main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    .logo {
+      border-radius: 0px 0px 10px 10px;
+      background: #000;
+      box-shadow: 0px 4px 95px 0px rgba(21, 225, 231, 0.31);
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+
+      @media (max-width: 1023px) {
+        background: unset;
+        box-shadow: unset;
+        width: 90px;
+        height: 90px;
+      }
+
+      img {
+        @media (max-width: 1023px) {
+          width: 70px !important;
+        }
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      padding: 30px 0;
+      margin: 0;
+
+      @media (max-width: 1023px) {
+        display: none;
+      }
+      li {
+        margin: 0px 20px;
+        @media (max-width: 1199px) {
+          margin: 0px 10px;
+        }
+        .active_menu {
+          color: #0ceaef;
+          font-weight: 600;
+        }
+        a {
+          color: #fff;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 600;
+          line-height: 31px;
+          text-transform: uppercase;
+          text-decoration: none;
+          @media (max-width: 1199px) {
+            font-size: 14px;
+          }
+
+          &:hover {
+            color: #0ceaef;
+            font-weight: 600;
+          }
+        }
+        .activeLink {
+          color: #0ceaef;
+          font-weight: 600;
+        }
+      }
+    }
+    .header_icons {
+      padding: 30px 0;
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        margin: 0px 10px;
+        @media (max-width: 1023px) {
+          display: none;
+        }
+        cursor: pointer;
+        &:hover {
+          path {
+            stroke: #14e3e9 !important;
+          }
+        }
+      }
+      .hemburger_menu {
+        display: none;
+        @media (max-width: 1023px) {
+          display: block !important;
+        }
+      }
+      .cart_items {
+        position: relative;
+        @media (max-width: 1023px) {
+          display: none;
+        }
+
+        .cart_points {
+          width: 25px;
+          height: 25px;
+          color: white;
+          background-color: #14e3e9;
+          position: absolute;
+          top: -10px;
+          right: -5px;
+          border: 3px solid #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            color: #fff;
+            font-family: Syne;
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .darkmode_wrapper {
+      width: 110px;
+      border-radius: 50px;
+      background: #2b2b2b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 30px;
+      padding: 5px;
+
+      @media (max-width: 767px) {
+        margin-left: 10px;
+      }
+      .inactive_mode {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .active_mode {
+        width: 40px;
+        height: 40px;
+        background-color: #14e3e9;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.light_header {
+  background-color: #fff !important;
+  .header_main {
+    .logo {
+      background-color: #fff !important;
+      box-shadow: unset !important;
+    }
+    ul {
+      li {
+        a {
+          color: #000 !important;
+          &:hover {
+            color: #1da1f2 !important;
+            font-weight: 600 !important;
+          }
+        }
+      }
+    }
+    .header_icons {
+      .cart_items {
+        .cart_points {
+          background-color: #26a5f2;
+        }
+      }
+    }
+    .light_wrapper {
+      background-color: #d8f0ff !important;
+      border: 1px solid #26a5f2;
+      .active_mode {
+        background-color: #26a5f2;
+        svg {
+          path {
+            stroke: #fff;
+          }
+        }
+      }
+      .inactive_mode {
+        svg {
+          path {
+            stroke: #26a5f2;
+          }
+        }
+      }
+    }
+  }
+}

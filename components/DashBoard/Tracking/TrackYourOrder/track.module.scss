@@ -1,0 +1,388 @@
+.tracker_wrapper {
+  h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 33.5px;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    i {
+      margin-right: 20px;
+      font-size: 16px;
+    }
+  }
+
+  .order_row {
+    border-radius: 8px;
+    background: #000;
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    @media (max-width: 481px) {
+      padding: 10px;
+    }
+    .order_detail_div1 {
+      h4 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+    .order_detail_div2 {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 767px) {
+        align-items: baseline;
+        flex-direction: column;
+      }
+      p {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0 0 8px 0;
+        @media (max-width: 767px) {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+
+        span {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: capitalize;
+          opacity: 0.7;
+        }
+      }
+    }
+    .mainHr {
+      background: #fff;
+      margin: 20px 0 0px 0;
+      height: 2px;
+    }
+    .details_data {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 12px;
+      border-bottom: 1px solid #5a5a5a;
+      @media (max-width: 481px) {
+        flex-direction: column;
+        align-items: flex-start;
+        grid-area: 10px;
+      }
+      input {
+        height: 20px;
+        width: 20px;
+      }
+      .img_of_active_div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 65%;
+        .img_divs_main {
+          width: 96px;
+          height: 96px;
+          border-radius: 8px;
+          background: rgba(12, 234, 239, 0.31);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 96px;
+            height: 96px;
+          }
+        }
+
+        .product_title {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 32px;
+          text-transform: capitalize;
+          margin-bottom: 0;
+          @media (max-width: 767px) {
+            font-size: 17px;
+          }
+          @media (max-width: 481px) {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+        p {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          margin: 0;
+          @media (max-width: 481px) {
+            font-size: 14px;
+          }
+          span {
+            font-weight: 400;
+            opacity: 0.7;
+            font-size: 14px;
+          }
+        }
+      }
+      .qty_div {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        width: 30%;
+        gap: 100px;
+        @media (max-width: 1199px) {
+          gap: 120px;
+        }
+        @media (max-width: 767px) {
+          gap: 20px;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+        @media (max-width: 481px) {
+          font-size: 16px;
+        }
+        span {
+          font-weight: 300;
+          opacity: 0.7;
+          font-size: 14px;
+
+          @media (max-width: 481px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .trackproress_div {
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 481px) {
+      padding: 60px 20px;
+    }
+    .trackproress {
+      background-color: rgba(12, 234, 239, 0.35);
+      height: 6px;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 481px) {
+        width: 100%;
+      }
+      .div_span_data {
+        display: flex;
+        position: relative;
+        span {
+          position: absolute;
+          top: 20px;
+          width: 100px;
+          left: -33px;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: capitalize;
+          text-align: center;
+          @media (max-width: 481px) {
+            font-size: 12px;
+          }
+        }
+      }
+      .trackproress_complete {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #0ceaef;
+        margin-top: -9px;
+      }
+      .trackproress_process {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: rgba(12, 234, 239, 0.35);
+        margin-top: -9px;
+        display: flex;
+
+        .process_inprocess {
+          background-color: #0ceaef;
+          height: 15px;
+          border-radius: 50%;
+          width: 15px;
+          margin: auto;
+        }
+      }
+      .trackproress_waiting {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #0ceaef;
+        margin-top: -9px;
+      }
+    }
+  }
+
+  .btns_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      justify-content: flex-start;
+      gap: 10px;
+    }
+    .health_btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: 2px solid #0ceaef;
+      color: #0ceaef;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: capitalize;
+      background: transparent;
+
+      @media (max-width: 1199px) {
+        font-size: 14px;
+      }
+    }
+    .feedback_btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: 2px solid #0ceaef;
+      color: #0ceaef;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: capitalize;
+      background: transparent;
+      @media (max-width: 1199px) {
+        font-size: 14px;
+      }
+    }
+    .zoom_btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: 2px solid #0ceaef;
+      color: #0ceaef;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: capitalize;
+      background: transparent;
+      @media (max-width: 1199px) {
+        font-size: 14px;
+      }
+    }
+    button {
+      transform: scale(1);
+      transition: 0.3s ease;
+      &:hover {
+        background: #0ceaef;
+        color: #000;
+        transform: scale(1.05);
+        transition: 0.3s ease;
+      }
+    }
+  }
+}
+
+.lightevents_wrapper {
+  h4 {
+    color: #1a1a1a;
+    svg {
+      path {
+        stroke: #1a1a1a;
+      }
+    }
+  }
+  .order_row {
+    border-radius: 8px;
+    border: 1px solid rgba(1, 1, 1, 0.05);
+    background: #fff;
+    .order_detail_div1 {
+      h4 {
+        color: #1a1a1a;
+      }
+    }
+    .order_detail_div2 {
+      p {
+        color: #1a1a1a;
+        span {
+          color: #1a1a1a;
+        }
+      }
+    }
+    .details_data {
+      .img_of_active_div {
+        .product_info {
+          .product_title {
+            color: #1a1a1a;
+          }
+          p {
+            color: #1a1a1a;
+          }
+        }
+      }
+      p {
+        color: #1a1a1a;
+        span {
+        }
+      }
+    }
+  }
+  .trackproress_div {
+    .trackproress {
+      background-color: rgba(29, 161, 242, 0.35);
+      .div_span_data {
+        span {
+          color: #1a1a1a;
+        }
+      }
+      .trackproress_complete {
+        background-color: #1da1f2;
+      }
+      .trackproress_process {
+        background-color: rgba(29, 161, 242, 0.35);
+        .process_inprocess {
+          background-color: #1da1f2;
+        }
+      }
+      .trackproress_waiting {
+        background-color: #1da1f2;
+      }
+    }
+  }
+  .btns_div {
+    .health_btn {
+      border: 2px solid #1da1f2;
+      color: #1da1f2;
+    }
+    .feedback_btn {
+      border: 2px solid #1da1f2;
+      color: #1da1f2;
+    }
+    .zoom_btn {
+      border: 2px solid #1da1f2;
+      color: #1da1f2;
+    }
+    button {
+      &:hover {
+        background-color: #1da1f2;
+        color: #fff;
+      }
+    }
+  }
+}

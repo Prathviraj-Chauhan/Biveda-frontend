@@ -1,0 +1,72 @@
+.confirm_order_main_wrap {
+  padding: 70px 0px;
+  background-color: #121212;
+  color: white;
+  .confirm_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    .left_div {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    .right_div {
+      position: relative;
+
+      .msg_div {
+        width: 70%;
+        position: absolute;
+        top: 56%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        right: 0px;
+        text-align: center;
+        button {
+          color: #000;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: italic;
+          font-weight: 600;
+          margin-top: 15px;
+          border-radius: 4px;
+          background: #0ceaef;
+          border: #0ceaef;
+          padding: 10px 20px;
+        }
+        .del_ord_btn {
+          padding: 10px 46px;
+          background: transparent !important;
+          border-radius: 4px;
+          border: 1px solid #0ceaef;
+          color: #0ceaef;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: italic;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.light_order_main {
+  background-color: #f9f9f9;
+  .confirm_wrap {
+    .right_div {
+      .msg_div {
+        button {
+          color: #fff;
+          background: #1da1f2;
+          border: #1da1f2;
+        }
+        .del_ord_btn {
+          background: transparent !important;
+          border: 1px solid #1da1f2;
+          color: #1da1f2;
+        }
+      }
+    }
+  }
+}

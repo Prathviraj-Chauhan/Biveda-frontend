@@ -1,0 +1,520 @@
+.cart_wrapper {
+  background-color: #121212;
+  color: #fff;
+  padding: 70px 0;
+  .main_wrapper {
+    display: flex;
+    flex-direction: column;
+    .first_div {
+      overflow-y: auto;
+      .second_div {
+        display: inline-block;
+        min-width: 100%;
+        padding: 8px 0 8px 0;
+        .third_div {
+          overflow: hidden;
+          table {
+            min-width: 100%;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 500;
+
+            thead {
+              background-color: #000;
+              tr {
+                font-size: 10px;
+                font-weight: 300;
+                color: white;
+                th {
+                  padding: 12px 24px 12px 24px;
+                  color: #fff;
+                  font-family: "Montserrat";
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  text-transform: uppercase;
+                }
+              }
+            }
+            tbody {
+              tr {
+                border-bottom-width: 1px;
+                border-color: #535050;
+                td {
+                  white-space: nowrap;
+                  padding: 30px 24px 30px 24px;
+                  .prodcutimg_pricewrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                  }
+                  .deleteIcon {
+                    cursor: pointer;
+                  }
+                  .prodcutimg {
+                    border-radius: 10px;
+                    background: rgba(12, 234, 239, 0.31);
+                    width: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    img {
+                      width: 100%;
+                      height: auto;
+                    }
+                  }
+                  .prodcutimg_pricewrapper_prices {
+                    h6 {
+                      color: #fff;
+                      font-family: Montserrat;
+                      font-size: 20px;
+                      font-weight: 600;
+                      line-height: 32px;
+                      text-transform: capitalize;
+                      margin-bottom: 5px;
+                      display: -webkit-box;
+                      overflow: hidden;
+                      -webkit-line-clamp: 1;
+                      -webkit-box-orient: vertical;
+                      width: 310px;
+                    }
+                    span {
+                      color: #fff;
+                      font-family: "Montserrat";
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: 300;
+                      line-height: normal;
+                      flex-wrap: wrap;
+                    }
+                  }
+                  .Prodduct_prices {
+                    color: #fff;
+                    font-family: "Montserrat";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px; /* 177.778% */
+                    text-transform: capitalize;
+                  }
+                  .button_wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    button {
+                      border: 1px solid #0ceaef;
+                      background-color: transparent;
+                      color: #0ceaef;
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 32px;
+                      font-size: 18px;
+                      &:hover {
+                        color: #fff;
+                        background-color: #0ceaef;
+                      }
+                    }
+                    span {
+                      color: #fff;
+                      font-family: Poppins;
+                      font-size: 18px;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 32px;
+                      text-transform: capitalize;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkout_wrapper {
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    margin-top: 50px;
+    .coupun_div {
+      width: 38%;
+      padding: 0px;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      h4 {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+      .send_message {
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: #fff;
+        .send_message_box {
+          display: flex;
+          padding: 5px;
+
+          input {
+            border: #fff;
+            color: black;
+            outline: none;
+            width: 100%;
+            font-family: "Montserrat";
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 26px;
+            padding-left: 10px;
+          }
+          .send_icon {
+            background-color: #0ceaef;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            color: #000;
+            border: none;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 800;
+            text-transform: uppercase;
+            @media (max-width: 1023px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .conti_btn {
+        margin-top: 20px;
+        button {
+          color: #3c4242;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+
+          border-radius: 8px;
+          border: 1px solid #bebcbd;
+          background: #fff;
+
+          display: flex;
+          width: 188px;
+          padding: 12px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+        }
+      }
+    }
+    .checkout_btn {
+      background-color: #1a1a1a;
+      width: 48%;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      .pricings {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        h4 {
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 0.36px;
+        }
+        span {
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.36px;
+        }
+      }
+      .check_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // width: 80%;
+        button {
+          width: 80%;
+          border-radius: 4px;
+          border: 2px solid #0ceaef;
+          background: #0ceaef;
+          color: #010101;
+          padding: 10px;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: italic;
+          font-weight: 800;
+          line-height: 32px;
+          text-transform: capitalize;
+
+          @media (max-width: 1023px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .cart_list_wrapper {
+    .product_topline {
+      padding: 15px 20px;
+      width: 100%;
+      display: flex;
+      background-color: #000000;
+      text-transform: uppercase;
+      font-weight: 300;
+
+      .producttag {
+        width: 38%;
+      }
+
+      .tag_wrap {
+        width: 62%;
+        display: flex;
+        justify-content: space-between;
+        .price_tag {
+          width: 14%;
+        }
+      }
+    }
+
+    .cartswrapped {
+      .carts_line {
+        display: flex;
+        padding: 20px 0;
+        align-items: center;
+        border-bottom: 1px solid #d9d9d9;
+        .products_name_wrapper {
+          width: 38%;
+          display: flex;
+          align-items: center;
+          i {
+            width: 10%;
+            text-align: center;
+            cursor: pointer !important;
+          }
+          .imgs_bg {
+            width: 25%;
+            margin-left: 15px;
+            margin-right: 15px;
+            border: 1px solid #e4e4e4;
+          }
+          .product_name {
+            font-size: 15px;
+            color: #5b5b5b;
+            margin-left: 20px;
+            width: 35%;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+        .price_wrap {
+          display: flex;
+          width: 62%;
+          justify-content: space-between;
+        }
+        .product_price {
+          width: 15%;
+          color: #5b5b5b;
+          font-size: 18px;
+          display: flex;
+          font-weight: 600;
+        }
+        .product_price3 {
+          width: 10%;
+          color: #5b5b5b;
+          font-size: 18px;
+          display: flex;
+          color: #014e70;
+          font-weight: 600;
+        }
+        .product_prices {
+          width: 18%;
+          display: flex;
+          justify-content: center;
+          @media (max-width: 481px) {
+            justify-content: flex-end;
+          }
+        }
+        .product_price2 {
+          width: 20%;
+          color: #5b5b5b;
+          font-size: 18px;
+          display: flex;
+          gap: 5px;
+
+          .decrement_btn {
+            border: 1px solid #18212529;
+            background-color: #014e70;
+            padding: 7px 10px;
+            font-size: 11px;
+            height: 30px;
+            color: white;
+          }
+          .product_number {
+            border: 1px solid #014e70;
+            background-color: #f8f8f8;
+            font-size: 11px;
+            width: 25px;
+            height: 30px;
+            font-weight: 600;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+          .increment_btn {
+            border: 1px solid #18212529;
+            background-color: #014e70;
+            height: 30px;
+            color: white;
+            padding: 7px 10px;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.light_cart_wrapper {
+  background: #f9f9f9;
+  .main_wrapper {
+    .first_div {
+      .second_div {
+        .third_div {
+          table {
+            thead {
+              background-color: #fff;
+              tr {
+                color: #000;
+                th {
+                  color: #000;
+                }
+              }
+            }
+            tbody {
+              tr {
+                border-color: #dcdcdc;
+                td {
+                  .prodcutimg {
+                    border-radius: 10px;
+                    background: rgba(29, 161, 242, 0.1);
+                  }
+                  .prodcutimg_pricewrapper_prices {
+                    h4 {
+                      color: #000;
+                    }
+                    span {
+                      color: #000;
+                    }
+                  }
+                  .Prodduct_prices {
+                    color: #1a1a1a;
+                  }
+                  .button_wrapper {
+                    button {
+                      border: 1px solid #1da1f2;
+                      color: #1da1f2;
+                      &:hover {
+                        color: #fff;
+                        background-color: #1da1f2;
+                      }
+                    }
+                    span {
+                      color: #000;
+                    }
+                  }
+                  svg {
+                    path {
+                      fill: #1da1f2;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkout_wrapper {
+    background-color: #fff;
+    .coupun_div {
+      h4 {
+        color: #000;
+      }
+      p {
+        color: #000;
+      }
+      .send_message {
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        background: #fff;
+        .send_message_box {
+          input {
+            border: #fff;
+            color: black;
+          }
+          .send_icon {
+            background-color: #1da1f2;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .checkout_btn {
+      background: #f9f9f9;
+      .pricings {
+        h4 {
+          color: #000;
+        }
+        span {
+          color: #000;
+        }
+      }
+      .check_btn {
+        button {
+          border: 2px solid #1da1f2;
+          background: #1da1f2;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.pagination_wrapper {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 30px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .page_text {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      li {
+        margin: 0 15px;
+        color: #606e7a;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          color: #0ceaef;
+        }
+      }
+      .active_list {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(45deg);
+        background-color: #0ceaef;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        span {
+          transform: rotate(315deg);
+        }
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    button {
+      background-color: unset;
+      border: none;
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+    .prev_btn {
+      margin-right: 20px;
+      svg {
+        path {
+          &:hover {
+            fill: #0ceaef;
+          }
+        }
+      }
+    }
+    .next_btn {
+      margin-left: 20px;
+      svg {
+        path {
+          &:hover {
+            fill: #0ceaef;
+          }
+        }
+      }
+    }
+  }
+}
+
+.light_pagination {
+  background: #fff;
+  .page_text {
+    color: #000;
+  }
+  .pagination {
+    ul {
+      li {
+        color: #606e7a;
+        &:hover {
+          color: #1da1f2;
+        }
+      }
+      .active_list {
+        background-color: #1da1f2;
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    .prev_btn {
+      svg {
+        path {
+          &:hover {
+            fill: #1da1f2;
+          }
+        }
+      }
+    }
+    .next_btn {
+      svg {
+        path {
+          &:hover {
+            fill: #1da1f2;
+          }
+        }
+      }
+    }
+  }
+}

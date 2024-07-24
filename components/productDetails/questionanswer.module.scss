@@ -1,0 +1,53 @@
+.privacy_main {
+  .detals_inqr {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    .chat_answers {
+      width: 90%;
+    }
+    .qrbox {
+      color: #000;
+      background: #0ceaef;
+      font-family: "Montserrat";
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      background: #0ceaef;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+    ul {
+      color: #fff;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 31px;
+    }
+  }
+  .privacy_main_headings {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    padding: 0px 0px 0px 30px;
+    margin-bottom: 0;
+  }
+
+  .privacy_main_para {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    i {
+      margin-right: 10px;
+    }
+  }
+}

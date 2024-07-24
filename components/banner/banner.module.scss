@@ -1,0 +1,23 @@
+.banner_comman {
+  background-image: url("/assets/policy_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 375px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-position: center;
+  .banner_text {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 63px;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    @media (max-width: 767px) {
+      font-size: 43px;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.currentplan_wrapper {
+  margin-top: 20px;
+  .currentplan_item {
+    border-bottom: 1px solid #504a4a;
+    .plan_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 40px 0;
+      span {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 10px;
+        text-transform: capitalize;
+      }
+    }
+    .plan_details {
+      display: flex;
+      align-content: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 0 16px;
+      margin-bottom: 30px;
+      .plan_details_item {
+        width: 31%;
+        padding: 10px 0;
+        p {
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 26px;
+          text-transform: capitalize;
+          margin-bottom: 0;
+          span {
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lightcurrentplan__wrapper {
+  .currentplan_item {
+    border-bottom: 1px solid #c3c3c3;
+    .plan_header {
+      span {
+        color: #000;
+      }
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+    .plan_details {
+      .plan_details_item {
+        p {
+          color: #000;
+          span {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

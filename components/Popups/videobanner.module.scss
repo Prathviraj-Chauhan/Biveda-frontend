@@ -1,0 +1,405 @@
+.bg_wrapper_popup_new {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000000a1;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .video_main_wrapper {
+    width: 1000px !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+  .diet_plan_wrapper {
+    width: 802px !important;
+    background: #000 !important;
+    box-shadow: 0px 4px 154px 0px rgba(12, 234, 239, 0.34) !important;
+  }
+  .popup_box_bpn {
+    width: 594px;
+    padding: 10px 40px;
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    background: #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 481px) {
+      padding: 10px 20px;
+    }
+
+    .popup_header {
+      padding: 15px 0px;
+      position: relative;
+      .p_header_hding {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .view_user_list_head {
+        text-align: left;
+      }
+      .close_pp_btn {
+        position: absolute;
+        top: 0;
+        right: -20px;
+        cursor: pointer;
+        i {
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .video_wrapper {
+      width: 100%;
+      position: relative;
+      video {
+        width: 100%;
+      }
+      .close_pp_btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        i {
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .feedback_wrapper {
+      select {
+        width: 100%;
+        height: 55px;
+        margin: 10px 0;
+        border-radius: 4px;
+        border: 1px solid #3d3d3d;
+        outline: none;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 0 10px;
+      }
+      .review_point {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+        .review_point_item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          span {
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      textarea {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #3d3d3d;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 15px;
+        outline: none;
+        font-weight: 400;
+        padding: 20px;
+        &::placeholder {
+          color: #fff;
+        }
+      }
+      .feedback_btn {
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 4px;
+        background: #0ceaef;
+        color: #040404;
+        border: none;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 700;
+        margin: 30px 0;
+      }
+    }
+    form {
+      width: 100%;
+      padding: 0 0 30px 0px;
+      border-radius: 10px;
+      background: transparent;
+      @media (max-width: 1023px) {
+        width: 100%;
+      }
+
+      .adddietplan_input_item {
+        width: 31%;
+        label {
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 31px; /* 193.75% */
+          letter-spacing: 0.32px;
+          text-transform: uppercase;
+          padding: 10px 0;
+
+          @media (max-width: 1023px) {
+            font-size: 12px;
+          }
+        }
+        .adddietplan_input {
+          input {
+            width: 100%;
+            background: transparent;
+            border-radius: 8px;
+            border: 1px solid #1c2d2c;
+            color: #fff;
+            padding: 15px 20px;
+            outline: none;
+            font-size: 16px;
+            &::placeholder {
+              color: #808385;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16px;
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          }
+          select {
+            width: 100%;
+            background: #000;
+            border-radius: 8px;
+            border: 1px solid #1c2d2c;
+            color: #fff;
+            padding: 15px 20px;
+            outline: none;
+            font-size: 16px;
+          }
+        }
+      }
+      button {
+        width: 221px;
+        height: 56px;
+        border-radius: 4px;
+        background: #0ceaef;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 800;
+        line-height: 30px;
+        text-transform: uppercase;
+        border: none;
+        margin-top: 30px;
+        transform: scale(1);
+        transition: 0.3s ease;
+
+        @media (max-width: 1199px) {
+          margin-top: 0px;
+          font-size: 18px;
+          width: 180px;
+          height: 45px;
+        }
+      }
+    }
+
+    .change_password_popup {
+      margin-top: 20px;
+      .long_input_divs {
+        margin-bottom: 20px;
+        .label_div2 {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          position: relative;
+          label {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.28px;
+            margin-bottom: 10px;
+          }
+          .inputmain {
+            width: 100%;
+            background: #1a1a1a;
+            border-radius: 8px;
+            border: 1px solid #1c2d2c;
+            color: #fff;
+            padding: 15px 20px;
+            outline: none;
+            font-size: 16px;
+            &::placeholder {
+              color: #808385;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16px;
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          }
+          .eyeSpan {
+            position: absolute;
+            right: 20px;
+            top: 17px;
+            color: #0ceaef;
+          }
+        }
+      }
+
+      .btn_of_otp {
+        width: 100% !important;
+        padding: 15px 0;
+        border-radius: 4px;
+        background: #0ceaef;
+        color: #040404;
+        border: none;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 700;
+        margin-top: 20px !important;
+        @media (max-width: 481px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.lightevents__wrapper {
+  .diet_plan_wrapper {
+    background: #fff !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.44) !important;
+  }
+  .popup_box_bpn {
+    background: #fff;
+    .popup_header {
+      .p_header_hding {
+        color: #000 !important;
+      }
+      .close_pp_btn {
+        i {
+          color: #000;
+        }
+      }
+    }
+
+    .feedback_wrapper {
+      // background: #fff;
+      select {
+        border-radius: 4px !important;
+        border: 1px solid #1a1a1a;
+        background: rgba(255, 255, 255, 0.08) !important;
+        color: #000;
+      }
+      .review_point {
+        .review_point_item {
+          span {
+            color: #000;
+          }
+
+          .selected_items {
+            circle {
+              stroke: #0ceaef;
+              fill: #1da1f2;
+            }
+          }
+          .unselected_items {
+            circle {
+              stroke: #4e4e4e;
+            }
+          }
+        }
+      }
+      textarea {
+        color: #000;
+
+        &::placeholder {
+          color: #000;
+        }
+      }
+      .feedback_btn {
+        background: #1da1f2;
+        color: #fff;
+      }
+    }
+
+    form {
+      .adddietplan_input_item {
+        label {
+          color: #000;
+        }
+        .adddietplan_input {
+          input {
+            border: 1px solid #b6b6b6;
+            color: #000;
+          }
+          select {
+            border-radius: 4px !important;
+            border: 1px solid #b6b6b6 !important;
+            background: rgba(255, 255, 255, 0.08) !important;
+            color: #000;
+          }
+        }
+      }
+      button {
+        background: #1da1f2;
+        color: white;
+      }
+    }
+    .change_password_popup {
+      .long_input_divs {
+        .label_div2 {
+          label {
+            color: #000;
+          }
+          .inputmain {
+            background: #f9f9f9;
+            border: 1px solid #cfcfcf !important;
+            color: #000;
+            &::placeholder {
+              color: #808385;
+            }
+          }
+          .eyeSpan {
+            color: #1da1f2;
+          }
+        }
+      }
+
+      .btn_of_otp {
+        background: #1da1f2;
+        color: #fff;
+      }
+    }
+  }
+}

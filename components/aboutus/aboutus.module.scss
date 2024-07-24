@@ -1,0 +1,376 @@
+.privacy_wrapper {
+  background-color: #121212;
+  color: #fff;
+  padding: 70px 0;
+  .privacy_main {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .privacy_main_left_box {
+      width: 44%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      .leftbox_exper {
+        display: flex;
+        align-items: center;
+        h1 {
+          color: #0ceaef;
+          font-family: PoetsenOne;
+          font-size: 200px;
+          font-style: italic;
+          font-weight: 800;
+          line-height: 200px;
+          letter-spacing: 10px;
+          text-transform: capitalize;
+          @media (max-width: 481px) {
+            font-size: 150px;
+          }
+        }
+        h4 {
+          margin-top: 60px;
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 0.9px;
+          text-transform: capitalize;
+          margin-bottom: 0;
+        }
+      }
+      h3 {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+        text-transform: capitalize;
+        margin-bottom: 0;
+      }
+      p {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25px;
+        letter-spacing: 0.7px;
+        text-transform: capitalize;
+        margin: 20px 0;
+      }
+      button {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 800;
+        line-height: 30px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        background: #0ceaef;
+        padding: 10px 30px;
+        border: none;
+        transform: scale(1);
+        transition: 0.3s ease;
+
+        &:hover {
+          border: 1px solid #fff;
+          background: transparent;
+          color: #fff;
+          transform: scale(1.05);
+          transition: 0.3s ease;
+        }
+      }
+    }
+    .rightbox_img {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.applications_section {
+  background-color: black;
+  color: #fff;
+  padding: 100px 0;
+  .applications_section_headlines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+      color: #fff;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: 1.5px;
+      text-transform: capitalize;
+      width: 80%;
+      @media (max-width: 481px) {
+        width: 100%;
+      }
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 35px;
+      letter-spacing: 0.8px;
+      text-transform: capitalize;
+      width: 80%;
+      @media (max-width: 481px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .applications_section_goals {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 1023px) {
+      gap: 10px;
+    }
+    .applications_section_goals_box {
+      box-shadow: 0px 0px 58px 0px rgba(0, 0, 0, 0.03);
+      width: 28%;
+      background-color: #181818;
+      padding: 40px 30px;
+
+      @media (max-width: 1023px) {
+        width: 32%;
+        padding: 40px 15px;
+      }
+      @media (max-width: 1023px) {
+        width: 48%;
+      }
+
+      @media (max-width: 481px) {
+        width: 100%;
+      }
+
+      h6 {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: 1.1px;
+        margin: 20px 0;
+        @media (max-width: 767px) {
+          font-size: 19px;
+        }
+      }
+      ul {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: 1.1px;
+        margin: 0;
+        padding: 0 0 0 1rem;
+
+        li {
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 35px;
+          letter-spacing: 0.8px;
+          margin: 5px 0;
+          @media (max-width: 1023px) {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.clientdatas_section {
+  background-color: #0ceaef;
+  color: #000000;
+  padding: 70px 0;
+
+  .clientdatas_section_wrapper {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+    @media (max-width: 481px) {
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
+    .databox {
+      width: 25%;
+      text-align: center;
+
+      @media (max-width: 767px) {
+        width: 50%;
+        padding: 30px 0px;
+      }
+      h5 {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+        @media (max-width: 1023px) {
+          font-size: 50px;
+        }
+      }
+      span {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.investores_compony_section {
+  background-color: #121212;
+  color: #fff;
+  padding: 100px 0;
+
+  .img_boxes_wrap {
+    // background: #181818;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    @media (max-width: 1023px) {
+      gap: 20px;
+    }
+    .img_box {
+      box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.11);
+      background: #181818;
+      justify-content: center;
+      width: 23%;
+      display: flex;
+      align-items: center;
+      padding: 75px 0;
+      @media (max-width: 1023px) {
+        width: 43%;
+      }
+      @media (max-width: 481px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.light_aboutus_wrapper {
+  background-color: #fff;
+  .privacy_main {
+    .privacy_main_left_box {
+      .leftbox_exper {
+        h1 {
+          color: #1da1f2;
+        }
+        h4 {
+          color: #000;
+        }
+      }
+      h3 {
+        color: #000;
+      }
+      p {
+        color: #000;
+      }
+      button {
+        color: #fff;
+        background: #1da1f2;
+        &:hover {
+          border: 1px solid #1da1f2;
+          color: #1da1f2;
+        }
+      }
+    }
+  }
+}
+
+.light_applications_wrapper {
+  background-color: #f9f9f9;
+  color: #000;
+  .applications_section_headlines {
+    h3 {
+      color: #000;
+    }
+    p {
+      color: #000;
+    }
+  }
+  .applications_section_goals {
+    .applications_section_goals_box {
+      background: #fff;
+      box-shadow: 0px 0px 58px 0px rgba(0, 0, 0, 0.03);
+      h6 {
+        color: #000;
+      }
+      ul {
+        color: #000;
+        li {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.light_clientdatas {
+  background-color: #1da1f2;
+  .clientdatas_section_wrapper {
+    .databox {
+      h5 {
+        color: #fff;
+      }
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.light_investores {
+  background-color: #f9f9f9;
+  .img_boxes_wrap {
+    .img_box {
+      background: #fff;
+      box-shadow: 0px 0px 44px 0px rgba(185, 185, 185, 0.05);
+    }
+  }
+}

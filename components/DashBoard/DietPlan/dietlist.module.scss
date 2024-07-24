@@ -1,0 +1,99 @@
+.mypatients_main_wrapper {
+  background-color: #000;
+  color: #fff;
+  //   padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  .third_div {
+    overflow: hidden;
+    table {
+      min-width: 100%;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 500;
+
+      thead {
+        background-color: rgba(12, 234, 239, 0.07);
+        backdrop-filter: blur(10px);
+        min-width: 100%;
+        //   padding: 0 20px;
+        tr {
+          font-size: 10px;
+          font-weight: 300;
+          color: white;
+          th {
+            padding: 12px 24px 12px 24px;
+            color: #fff;
+            // text-align: center;
+            font-family: "Montserrat";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-bottom-width: 1px;
+          border-color: #535050;
+          td {
+            cursor: pointer;
+            white-space: nowrap;
+            padding: 20px 24px 20px 20px;
+            h4 {
+              color: #fff;
+              font-family: Montserrat;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: normal;
+              text-transform: capitalize;
+            }
+            .svg_div {
+              background-color: #f2971f;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 20px;
+              width: 40px;
+              height: 40px;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.lightevents__wrapper {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #fff;
+
+  .third_div {
+    table {
+      thead {
+        background: #fff;
+        tr {
+          color: #000;
+          th {
+            color: #000;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            h4 {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
